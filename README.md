@@ -5,6 +5,8 @@
 
 Tenho cerca de cinco anos de experiência construindo pipelines de dados de alto volume e aplicações backend no mercado financeiro. Gosto de transformar grandes volumes de dados em produtos confiáveis, escaláveis e fáceis de consumir, principalmente via APIs.
 
+> 🇬🇧 **In English:** Data & Software Engineer based in Porto Alegre, Brazil (remote). About five years building high-volume data pipelines and backend applications in the financial sector, from ETL/ELT and distributed processing to data lakes, data warehouses and REST APIs, including a hybrid on-premises-to-AWS migration. Fluent in English, advanced Spanish. Open to remote opportunities.
+
 ---
 
 ## 🔧 O que eu faço
