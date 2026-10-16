@@ -57,7 +57,13 @@ Português (nativo) · Inglês (fluente) · Espanhol (avançado)
 
 ## 📌 Projetos em destaque
 
-Em breve, novos projetos de engenharia de dados com pipelines ETL, orquestração e arquitetura em nuvem, cada um com documentação e diagrama.
+Três projetos de engenharia de dados em desenvolvimento, todos com dados públicos brasileiros, requisitos documentados, testes, CI e decisões de arquitetura registradas (ADRs). Os repositórios serão abertos ao longo do desenvolvimento.
+
+| Projeto | O que faz | Stack | Status |
+|---|---|---|---|
+| **spark-cnpj-lakehouse** | Lakehouse em camadas (bronze, silver, gold) sobre a base de CNPJ da Receita Federal, com carga incremental e benchmark de tuning | Spark, Delta Lake, MinIO, Docker | 🚧 em desenvolvimento |
+| **aws-fundos-pipeline** | Pipeline serverless dos dados de fundos de investimento da CVM, 100% provisionado como código e com custo abaixo de US$ 5/mês | AWS (Lambda, S3, Glue, Athena), Terraform, Airflow, GitHub Actions | 🗓️ planejado |
+| **dbt-dw-api** | Data warehouse dimensional com testes de qualidade e histórico (SCD2), servido por uma API REST com contrato OpenAPI testado | dbt, DuckDB, FastAPI, Schemathesis | 🗓️ planejado |
 
 ---
 
