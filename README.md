@@ -27,6 +27,7 @@ Tenho cerca de cinco anos de experiência construindo pipelines de dados de alto
 | **Linguagens e bibliotecas** | Python, SQL, ECL, Pandas |
 | **Engenharia de dados** | ETL, Data Pipelines, Data Warehouse, Data Lake, Big Data, APIs REST, HPCC Systems (Thor, Roxie, ESP, Orbit), SALT |
 | **Cloud (AWS)** | S3, Lambda, Glue, Athena, EMR, SageMaker, EKS |
+| **Modelagem e APIs (portfólio)** | dbt, DuckDB, FastAPI, Pydantic, pytest, Schemathesis |
 | **Orquestração e DevOps** | Apache Airflow, Docker, GitLab, GitLab CI/CD, CRON |
 | **Metodologias** | Scrum, Kanban, Jira |
 
@@ -59,13 +60,13 @@ Português (nativo) · Inglês (fluente) · Espanhol (avançado)
 
 ## 📌 Projetos em destaque
 
-Três projetos de engenharia de dados em desenvolvimento, todos com dados públicos brasileiros, requisitos documentados, testes, CI e decisões de arquitetura registradas (ADRs). Os repositórios serão abertos ao longo do desenvolvimento.
+Três projetos de engenharia de dados com dados públicos brasileiros, requisitos documentados, testes automatizados, CI e decisões de arquitetura registradas (ADRs). Os repositórios são públicos.
 
 | Projeto | O que faz | Stack | Status |
 |---|---|---|---|
-| **spark-cnpj-lakehouse** | Lakehouse em camadas (bronze, silver, gold) sobre a base de CNPJ da Receita Federal, com carga incremental e benchmark de tuning | Spark, Delta Lake, MinIO, Docker | 🚧 em desenvolvimento |
-| **aws-fundos-pipeline** | Pipeline serverless dos dados de fundos de investimento da CVM, 100% provisionado como código e com custo abaixo de US$ 5/mês | AWS (Lambda, S3, Glue, Athena), Terraform, Airflow, GitHub Actions | 🗓️ planejado |
-| **dbt-dw-api** | Data warehouse dimensional com testes de qualidade e histórico (SCD2), servido por uma API REST com contrato OpenAPI testado | dbt, DuckDB, FastAPI, Schemathesis | 🗓️ planejado |
+| [**dbt-dw-api**](https://github.com/thalesreiser/dbt-dw-api) | Data warehouse dimensional (modelo estrela, SCD2, carga incremental) com dados de fundos da CVM, servido por uma API REST com autenticação, rate limit e contrato OpenAPI testado. [Documentação do dbt](https://thalesreiser.github.io/dbt-dw-api/) | dbt, DuckDB, FastAPI, Schemathesis, Docker | ✅ concluído: 216 testes de dados, contrato sem violações, p95 de 54 ms |
+| [**spark-cnpj-lakehouse**](https://github.com/thalesreiser/spark-cnpj-lakehouse) | Lakehouse em camadas (bronze, silver, gold) sobre a base de CNPJ da Receita Federal, com carga incremental por MERGE, time travel, qualidade de dados e benchmark de tuning | Spark, Delta Lake, MinIO, Docker | 🚧 fase final: job principal 50% mais rápido após o tuning (medido na mesma máquina) |
+| [**aws-fundos-pipeline**](https://github.com/thalesreiser/aws-fundos-pipeline) | Pipeline serverless dos dados de fundos de investimento da CVM, provisionado como código e com custo abaixo de US$ 5/mês | AWS (Lambda, S3, Glue, Athena), Terraform, Airflow, GitHub Actions | 🗓️ planejado: fundações e Airflow local prontos, infraestrutura AWS em seguida |
 
 ---
 
