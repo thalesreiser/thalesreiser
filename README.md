@@ -65,7 +65,7 @@ Três projetos de engenharia de dados com dados públicos brasileiros, requisito
 | Projeto | O que faz | Stack | Status |
 |---|---|---|---|
 | [**dbt-dw-api**](https://github.com/thalesreiser/dbt-dw-api) | Data warehouse dimensional (modelo estrela, SCD2, carga incremental) com dados de fundos da CVM, servido por uma API REST com autenticação, rate limit e contrato OpenAPI testado. [Documentação do dbt](https://thalesreiser.github.io/dbt-dw-api/) | dbt, DuckDB, FastAPI, Schemathesis, Docker | ✅ concluído: 216 testes de dados, contrato sem violações, p95 de 54 ms |
-| [**spark-cnpj-lakehouse**](https://github.com/thalesreiser/spark-cnpj-lakehouse) | Lakehouse em camadas (bronze, silver, gold) sobre a base de CNPJ da Receita Federal, com carga incremental por MERGE, time travel, qualidade de dados e benchmark de tuning | Spark, Delta Lake, MinIO, Docker | 🚧 fase final: job principal 63% mais rápido após o tuning |
+| [**spark-cnpj-lakehouse**](https://github.com/thalesreiser/spark-cnpj-lakehouse) | Lakehouse em camadas (bronze, silver, gold) sobre a base de CNPJ da Receita Federal, com carga incremental por MERGE, time travel, qualidade de dados e benchmark de tuning | Spark, Delta Lake, MinIO, Docker | 🚧 fase final: job principal 50% mais rápido após o tuning (medido na mesma máquina) |
 | [**aws-fundos-pipeline**](https://github.com/thalesreiser/aws-fundos-pipeline) | Pipeline serverless dos dados de fundos de investimento da CVM, provisionado como código e com custo abaixo de US$ 5/mês | AWS (Lambda, S3, Glue, Athena), Terraform, Airflow, GitHub Actions | 🗓️ planejado: fundações e Airflow local prontos, infraestrutura AWS em seguida |
 
 ---
